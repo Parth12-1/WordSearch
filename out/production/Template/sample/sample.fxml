@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+
+<AnchorPane id="AnchorPane" fx:id="aPane" prefHeight="647.0" prefWidth="906.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+
+        <GridPane fx:id="gPane" layoutX="32.0" layoutY="107.0" prefHeight="393.0" prefWidth="393.0">
+
+        </GridPane>
+        <ListView fx:id="Lst1" layoutX="453.0" layoutY="107.0" prefHeight="305.0" prefWidth="165.0" />
+        <Label fx:id="UserChse" alignment="CENTER" contentDisplay="CENTER" layoutX="153.0" layoutY="50.0" prefHeight="17.0" prefWidth="151.0" text=" " textAlignment="CENTER" />
+        <Button fx:id="Reset" layoutX="199.0" layoutY="67.0" mnemonicParsing="false" onAction="#ResetChoice" text="Reset Selected Words" />
+        <MenuBar prefHeight="25.0" prefWidth="906.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Start">
+                    <items>
+                        <MenuItem fx:id="button" mnemonicParsing="false" onAction="#Animals" text="Animals" />
+                  <MenuItem fx:id="button1" mnemonicParsing="false" onAction="#Teams" text="Sports Teams" />
+                  <MenuItem fx:id="button2" mnemonicParsing="false" onAction="#Country" text="Countries" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <Button fx:id="Conf" layoutX="128.0" layoutY="67.0" mnemonicParsing="false" onAction="#Confirm" text="Confirm" />
+        <ToggleButton fx:id="ToggleBTN" layoutX="518.0" layoutY="67.0" mnemonicParsing="false" onAction="#Toggle" text="ON" />
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="494.0" layoutY="50.0" text="Random Letters" textAlignment="CENTER" />
+        <Label fx:id="ColorInd" alignment="CENTER" contentDisplay="CENTER" layoutX="127.0" layoutY="27.0" prefHeight="17.0" prefWidth="203.0" text="                     " textAlignment="CENTER" />
+
+    </children>
+</AnchorPane>
